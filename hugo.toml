@@ -1,0 +1,47 @@
+baseURL = 'https://bob-mai.com/'
+languageCode = 'en-us'
+title = 'Bob Mai'
+theme = 'PaperMod'
+
+[params]
+  env = 'production'
+  title = 'Bob Mai'
+  description = 'Personal website of Bob Mai'
+  author = 'Bob Mai'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  # PaperMod features
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  disableSpecial1stPost = false
+
+[params.profileMode]
+  enabled = true
+  title = "Hi, I'm Bob"
+  subtitle = "Welcome to my personal corner on the web. I'm a developer, thinker, and builder."
+  imageUrl = ""
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "my image"
+  [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "/posts"
+  [[params.profileMode.buttons]]
+    name = "About"
+    url = "/about"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
